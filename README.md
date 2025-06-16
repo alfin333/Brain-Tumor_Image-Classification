@@ -6,7 +6,10 @@
 # 🧠 Brain Tumor Classification with CNN
 
 Proyek ini bertujuan untuk membangun sistem klasifikasi dengan dataset gambar MRI otak untuk deteksi keberadaan tumor menggunakan model Convolutional Neural Network (CNN). Dataset yang digunakan diambil dari Kaggle dengan dua kelas: **"Yes" (tumor)** dan **"No" (no tumor)**.
+---
+## ❗Saran Penting
 
+- Jalankan file "Tumor_Otak_by_Alfin.ipynb" pada Google collab agar tidak ada kendala
 ---
 
 ## 🔧 Teknologi yang Digunakan
