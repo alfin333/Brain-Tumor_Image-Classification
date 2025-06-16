@@ -1,6 +1,7 @@
-# 
 <h1 align="center"> Brain-Tumor_Image-Classificationy</h1>
 <p align="center"> Convolutional Neural Network</p>
+
+### Name : Muhammad Alfin
 
 # 🧠 Brain Tumor Classification with CNN
 
@@ -19,7 +20,7 @@ Proyek ini bertujuan untuk membangun sistem klasifikasi dengan dataset gambar MR
 
 ---
 
-## 🧠 Arsitektur Model CNN
+## 🏢 Arsitektur Model CNN
 
 Model CNN yang digunakan memiliki arsitektur sederhana namun cukup efektif untuk klasifikasi biner:
 
@@ -32,3 +33,45 @@ Input: (224, 224, 3)
 → Dense(256, relu)
 → Dropout(0.5)
 → Dense(1, sigmoid)  → Output (1 = Tumor, 0 = Tidak Tumor)
+
+```
+---
+## 🔄 Cara Kerja Sistem Deteksi
+
+📥 Dataset Import
+- Gambar MRI otak dikumpulkan dari dua folder: yes/ (mengandung tumor) dan no/ (tidak ada tumor).
+
+🧽 Preprocessing
+
+- Semua gambar diubah ke ukuran 224x224 piksel.
+
+- Konversi ke format RGB (jika grayscale).
+
+- Normalisasi ke rentang [0,1].
+
+🏷️ Labeling
+
+- Kelas "tumor" dilabeli 1
+
+- Kelas "no tumor" dilabeli 0
+
+📊 Split Data
+- Dataset dibagi menjadi:
+
+- 80% data latih
+
+- 20% data uji
+
+🧠 Training CNN
+
+- Model dilatih selama 10 epoch dengan batch size 32.
+
+🧪 Evaluasi & Visualisasi
+
+- Akurasi dan loss ditampilkan dalam bentuk grafik.
+
+- Evaluasi dilakukan pada data uji.
+
+📷 Prediksi Gambar Baru
+
+- Pengguna dapat upload gambar MRI otak dan sistem akan memprediksi apakah gambar tersebut mengandung tumor atau tidak.
